@@ -1,5 +1,6 @@
 # 📘 Ingeniería de Software 2
-**Estudiante:** Juan José Martin \n
+**Estudiante:** Juan José Martin
+
 **Universidad:** Univesidad Nacional de Colombia  
 **Profesor:** Sergio Vargas  
 **Semestre:** 2026-I  

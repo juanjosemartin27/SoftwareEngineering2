@@ -266,17 +266,11 @@ Simularemos un sistema de cafetería donde:
 4. Se muestra una notificación cuando el cafe esta listo usando Observer.
 
 ```java
-// ==========================
-// INTERFAZ DEL CAFÉ
-// ==========================
 interface Cafe {
 
     String descripcion();
 }
 
-// ==========================
-// PROTOTYPE
-// ==========================
 class CafeBase implements Cafe, Cloneable {
 
     @Override
@@ -290,9 +284,6 @@ class CafeBase implements Cafe, Cloneable {
     }
 }
 
-// ==========================
-// DECORATOR BASE
-// ==========================
 abstract class CafeDecorator implements Cafe {
 
     protected Cafe cafe;
@@ -302,9 +293,6 @@ abstract class CafeDecorator implements Cafe {
     }
 }
 
-// ==========================
-// DECORATOR DE CHOCOLATE
-// ==========================
 class ChocolateDecorator extends CafeDecorator {
 
     public ChocolateDecorator(Cafe cafe) {
@@ -317,17 +305,11 @@ class ChocolateDecorator extends CafeDecorator {
     }
 }
 
-// ==========================
-// OBSERVER
-// ==========================
 interface Observer {
 
     void actualizar();
 }
 
-// ==========================
-// OBSERVER CONCRETO
-// ==========================
 class Pedido implements Observer {
 
     @Override
@@ -371,22 +353,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // ==========================
+
         // PROTOTYPE
-        // ==========================
         CafeBase original = new CafeBase();
 
         CafeBase clon = original.clone();
 
-        // ==========================
         // DECORATOR
-        // ==========================
         Cafe cafeDecorado =
                 new ChocolateDecorator(clon);
 
-        // ==========================
         // OBSERVER
-        // ==========================
         Pedido pantalla =
                 new Pedido();
 

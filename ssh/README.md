@@ -96,18 +96,6 @@ Consumir la API desde otro dispositivo usando un tunel SSH (Termius en este caso
 - El flujo de register, login, POST y PUT responde igual que en la Parte 1.
 - Se confirma que el token viaja por el tunel y permite acceder a endpoints protegidos.
 
-#### Conexion en Termius
-
-![Conexion SSH](media/connection_ssh.jpg)
-
-#### Register y Login
-
-![Register/Login](media/register_login_ssh.jpg)
-
 #### Create task
 
-![Create task SSH](media/post_tasks_ssh.jpg)
-
-#### Update task
-
-![Update task SSH](media/put_tasks_ssh.jpg)
+![Termius](media/termius.png)
